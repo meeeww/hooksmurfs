@@ -16,6 +16,7 @@ import {
   ChatBubbleLeftIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { RxDiscordLogo } from 'react-icons/rx';
 
 const solutions = [
   {
@@ -39,21 +40,14 @@ const solutions = [
   },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Discord Channel', href: '#', icon: ChatBubbleLeftIcon },
+  { name: 'Servidor Discord', href: '#', icon: RxDiscordLogo },
 ]
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
+    name: 'Soporte Discord',
+    description: 'Pregunta todas tus dudas en nuestro servidor de Discord.',
     href: '#',
-    icon: LifebuoyIcon,
-  },
-  {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkSquareIcon,
+    icon: RxDiscordLogo,
   },
 ]
 
@@ -92,7 +86,7 @@ export default function Header() {
                       'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
-                    <span>Accounts</span>
+                    <span>Cuentas</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -149,10 +143,10 @@ export default function Header() {
             </Popover>
 
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pricing
+              Sobre Nosotros
             </a>
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Docs
+              Sistema de afiliados
             </a>
 
             <Popover className="relative">
@@ -164,7 +158,7 @@ export default function Header() {
                       'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
-                    <span>More</span>
+                    <span>Más</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
